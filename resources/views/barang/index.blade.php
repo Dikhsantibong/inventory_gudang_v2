@@ -31,33 +31,41 @@
                             Daftar Barang
                         </div>
                         <div class="card-body">
-                            <table id="datatablesSimple" class="table table-striped">
-                                <thead>
-                                    <tr>
-                                        <th>Kode Barang</th>
-                                        <th>Kategori</th>
-                                        <th>Deskripsi</th>
-                                        <th>Detail</th>
-                                        <th>Extra</th>
-                                        <th>Aksi</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    @foreach($barangs as $barang)
-                                    <tr>
-                                        <td>{{ $barang->STOCK_CODE }}</td>
-                                        <td>{{ $barang->CATEGORY }}</td>
-                                        <td>{{ $barang->DESCRIPTION }}</td>
-                                        <td>{{ $barang->DETAIL }}</td>
-                                        <td>{{ $barang->EXTRA }}</td>
-                                        <td>
-                                            <button class="btn btn-primary btn-sm">Edit</button>
-                                            <button class="btn btn-danger btn-sm">Hapus</button>
-                                        </td>
-                                    </tr>
-                                    @endforeach
-                                </tbody>
-                            </table>
+                            <div class="table-responsive">
+                                <table id="datatablesSimple" class="table table-striped table-bordered" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Kode Barang</th>
+                                            <th>Kategori</th>
+                                            <th>Deskripsi</th>
+                                            <th style="min-width: 200px;">Detail</th>
+                                         
+                                            <th style="width: 100px;" class="text-center">Aksi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach($barangs as $barang)
+                                        <tr>
+                                            <td>{{ $barang->STOCK_CODE }}</td>
+                                            <td>{{ $barang->CATEGORY }}</td>
+                                            <td>{{ $barang->DESCRIPTION }}</td>
+                                            <td >{{ $barang->DETAIL }}</td>
+                                            
+                                            <td class="text-center">
+                                                <div class="d-flex justify-content-center">
+                                                    <a href="#" class="btn btn-datatable btn-icon btn-transparent-dark" title="Edit">
+                                                        <i data-feather="edit"></i>
+                                                    </a>
+                                                    <a href="#" class="btn btn-datatable btn-icon btn-transparent-dark" title="Hapus">
+                                                        <i data-feather="trash-2"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        @endforeach
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>

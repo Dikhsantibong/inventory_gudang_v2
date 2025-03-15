@@ -39,9 +39,10 @@
                                         <div class="row align-items-center">
                                             <div class="col-xl-8 col-xxl-12">
                                                 <div class="text-center text-xl-start text-xxl-center mb-4 mb-xl-0 mb-xxl-4">
-                                                    <h1 class="text-primary">Welcome to SB Admin Pro!</h1>
-                                                    <p class="text-gray-700 mb-0">Browse our fully designed UI toolkit! Browse our prebuilt app pages, components, and utilites, and be sure to look at our full documentation!</p>
+                                                    <h1 class="text-primary">🎉 Selamat Datang di Gudang Manager Pro!</h1>
+                                                    <p class="text-gray-700 mb-0">Kelola stok barang dengan mudah dan efisien. Lakukan pemindaian barcode, pantau pergerakan barang, dan dapatkan laporan real-time untuk mengoptimalkan manajemen gudang Anda.</p>
                                                 </div>
+
                                             </div>
                                             <div class="col-xl-4 col-xxl-12 text-center"><img class="img-fluid" src="{{ asset('dist/assets/img/illustrations/at-work.svg') }}" style="max-width: 26rem" /></div>
                                         </div>
@@ -57,14 +58,14 @@
                                     <div class="card-body">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="me-3">
-                                                <div class="text-white-75 small">Earnings (Monthly)</div>
-                                                <div class="text-lg fw-bold">$40,000</div>
+                                                <div class="text-white-75 small">Total Barang</div>
+                                                <div class="text-lg fw-bold">127 Items</div>
                                             </div>
-                                            <i class="feather-xl text-white-50" data-feather="calendar"></i>
+                                            <i class="feather-xl text-white-50" data-feather="package"></i>
                                         </div>
                                     </div>
                                     <div class="card-footer d-flex align-items-center justify-content-between small">
-                                        <a class="text-white stretched-link" href="#!">View Report</a>
+                                        <a class="text-white stretched-link" href="{{ route('barang.index') }}">Lihat Detail</a>
                                         <div class="text-white"><i class="fas fa-angle-right"></i></div>
                                     </div>
                                 </div>
@@ -74,14 +75,14 @@
                                     <div class="card-body">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="me-3">
-                                                <div class="text-white-75 small">Earnings (Annual)</div>
-                                                <div class="text-lg fw-bold">$215,000</div>
+                                                <div class="text-white-75 small">Stok Menipis</div>
+                                                <div class="text-lg fw-bold">8 Items</div>
                                             </div>
-                                            <i class="feather-xl text-white-50" data-feather="dollar-sign"></i>
+                                            <i class="feather-xl text-white-50" data-feather="alert-triangle"></i>
                                         </div>
                                     </div>
                                     <div class="card-footer d-flex align-items-center justify-content-between small">
-                                        <a class="text-white stretched-link" href="#!">View Report</a>
+                                        <a class="text-white stretched-link" href="#!">Lihat Detail</a>
                                         <div class="text-white"><i class="fas fa-angle-right"></i></div>
                                     </div>
                                 </div>
@@ -91,14 +92,14 @@
                                     <div class="card-body">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="me-3">
-                                                <div class="text-white-75 small">Task Completion</div>
-                                                <div class="text-lg fw-bold">24</div>
+                                                <div class="text-white-75 small">Barang Masuk Hari Ini</div>
+                                                <div class="text-lg fw-bold">12 Items</div>
                                             </div>
-                                            <i class="feather-xl text-white-50" data-feather="check-square"></i>
+                                            <i class="feather-xl text-white-50" data-feather="arrow-down-circle"></i>
                                         </div>
                                     </div>
                                     <div class="card-footer d-flex align-items-center justify-content-between small">
-                                        <a class="text-white stretched-link" href="#!">View Tasks</a>
+                                        <a class="text-white stretched-link" href="#!">Lihat Detail</a>
                                         <div class="text-white"><i class="fas fa-angle-right"></i></div>
                                     </div>
                                 </div>
@@ -108,14 +109,14 @@
                                     <div class="card-body">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="me-3">
-                                                <div class="text-white-75 small">Pending Requests</div>
-                                                <div class="text-lg fw-bold">17</div>
+                                                <div class="text-white-75 small">Barang Keluar Hari Ini</div>
+                                                <div class="text-lg fw-bold">5 Items</div>
                                             </div>
-                                            <i class="feather-xl text-white-50" data-feather="message-circle"></i>
+                                            <i class="feather-xl text-white-50" data-feather="arrow-up-circle"></i>
                                         </div>
                                     </div>
                                     <div class="card-footer d-flex align-items-center justify-content-between small">
-                                        <a class="text-white stretched-link" href="#!">View Requests</a>
+                                        <a class="text-white stretched-link" href="#!">Lihat Detail</a>
                                         <div class="text-white"><i class="fas fa-angle-right"></i></div>
                                     </div>
                                 </div>
