@@ -53,12 +53,17 @@
                                             
                                             <td class="text-center">
                                                 <div class="d-flex justify-content-center">
-                                                    <a href="#" class="btn btn-datatable btn-icon btn-transparent-dark" title="Edit">
+                                                    <a href="{{ route('barang.edit', $barang->STOCK_CODE) }}" class="btn btn-datatable btn-icon btn-transparent-dark" title="Edit">
                                                         <i data-feather="edit"></i>
                                                     </a>
-                                                    <a href="#" class="btn btn-datatable btn-icon btn-transparent-dark" title="Hapus">
-                                                        <i data-feather="trash-2"></i>
-                                                    </a>
+                                                    <form action="{{ route('barang.destroy', $barang->STOCK_CODE) }}" method="POST" class="d-inline">
+                                                        @csrf
+                                                        @method('DELETE')
+                                                        <button type="submit" class="btn btn-datatable btn-icon btn-transparent-dark" title="Hapus" 
+                                                                onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')">
+                                                            <i data-feather="trash-2"></i>
+                                                        </button>
+                                                    </form>
                                                 </div>
                                             </td>
                                         </tr>

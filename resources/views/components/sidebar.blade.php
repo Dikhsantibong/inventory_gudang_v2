@@ -34,7 +34,7 @@
                 </div>
 
                 <!-- Sidenav Menu Heading (Manajemen Data & Analisis)-->
-                <div class="sidenav-menu-heading">Manajemen Data & Analisis</div>
+                <div class="sidenav-menu-heading">Master Data & Analisis</div>
                 <a class="nav-link" href="{{ route('barang.index') }}">
                     <div class="nav-link-icon"><i data-feather="package"></i></div>
                     Data Barang
