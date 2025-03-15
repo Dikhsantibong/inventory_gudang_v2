@@ -6,7 +6,7 @@
     <!-- * * * * * * When using an image, we recommend the SVG format.-->
     <!-- * * * * * * Dimensions: Maximum height: 32px, maximum width: 240px-->
     <a class="navbar-brand pe-3 ps-4 ps-lg-2" href="index.html">
-        <img src="{{ asset('logo/navlogo.png') }}" alt="SB Admin Pro" style="height: 32px;">
+        <img src="{{ asset('logo/navlogo.png') }}" alt="SB Admin Pro" style="height: 48px;">
     </a>
     <!-- Navbar Search Input-->
     <!-- * * Note: * * Visible only on and above the lg breakpoint-->
